@@ -1,0 +1,22 @@
+package zadatak7_1_1;
+
+public class TestKucniAparat {
+	
+	public static void main(String[] args) {
+		
+		KucniAparat kucniAparat = new KucniAparat("Philips","SQ2",true);
+		Televizor televizor = new Televizor("LG","LT33",false,2);
+		Radio radio = new Radio("Sony","SR",false,88.9);
+		
+		kucniAparat.iskljuci();
+		televizor.ukljuci();
+		televizor.promeniProgramNavise();
+		radio.ukljuci();
+		radio.setFrekvencija(105.6);
+		
+		kucniAparat.ispisi();
+		televizor.ispisi();
+		radio.ispisi();
+	}
+
+}
